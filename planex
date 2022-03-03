@@ -248,7 +248,6 @@ def main():
         else:
             mat_sqerropuro[i] = (maty[i] - media_repeticao) ** 2
     sqerropuro = np.sum(mat_sqerropuro)
-    #print(sqerropuro)
 
     font_var = np.array(['Regressão', 'Resíduos', 'Falta Ajuste', 'Erro Puro'])
     num_gl = np.array([matbetas.size - 1, 2 ** k + r - matbetas.size, 2 ** k + 1 - matbetas.size, r - 1])
